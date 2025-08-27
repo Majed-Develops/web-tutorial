@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Test</title>
+    <link rel="stylesheet" href="/functions-test/functionstest.css">
+</head>
+<body>
+
+<a class="nextBtn" href="/lunchmenutest/lunchmenu.html">Next</a>
+<h3>- Excersises -</h3>
+<br>
+<p class="question">Question 1:</p>
+<div class="excersiseOne">
+<p>- In this excersise, we are building the largest number finder function:</p>
+<ol>
+  <li>You should create a function named <code>largestOfAll</code></li>
+  <li><code>largestOfAll</code> should take a single parameter.</li>
+  <li><code>largestOfAll([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]])</code> should return an array.</li>
+  <li><code>largestOfAll([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]])</code> should return <code>[27, 5, 39, 1001]</code></li>
+  <li><code>largestOfAll([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]])</code> should return <code>[9, 35, 97, 1000000]</code></li>
+  <li><code>largestOfAll([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]])</code> should return <code>[25, 48, 21, -3]</code></li>
+</ol>
+<p>- Thinking Strategy → Pick a starting point → say “the first element is the biggest I know.” (like setting a “champion” at the beginning)</p>
+<ol>
+  <li> Go through the rest one by one. Each time: </li>
+  <li>Compare the current number with the “champion.”</li>
+  <li>If the current number is bigger → replace the champion.</li>
+  <li>If not → keep the champion.</li>
+  <li>After the loop ends → the champion is the largest number.</li>
+</ol>
+
+<ol>
+  <li>Start with an empty result array (this will hold all the champions).</li>
+  <ol>
+    <li>For each sub-array:</li>
+    <li>Assume the first number is the champion.</li>
+    <li>Loop through the rest of that sub-array.</li>
+    <li>Update the champion if a bigger number is found.</li>
+    <li>After finishing that sub-array, push the champion into the result array.</li>
+  </ol>
+  <li>After checking all sub-arrays, return the result array.</li>
+</ol>
+
+</div>
+<p class="answer">Answer 1:</p>
+<div class="excersiseOneAnswer">
+  <code>
+      function largestOfAll(arrays){<br>
+  let result = [];<br>
+  for(let i = 0; i &lt arrays.length; i++){<br>
+
+    let champion = arrays[i][0];<br>
+
+    for(let number of arrays[i]){<br>
+      if(number &gt champion){<br>
+        champion = number;<br>
+      }<br>
+    }<br>
+    result.push(champion);<br>
+  }<br>
+  console.log(result);<br>
+}<br>
+    </code>
+    <p class="statement">Check console for answer</p>
+</div>
+<br>
+<p class="question">Question 2:</p>
+
+<script src="/functions-test/functionstest.js"></script>
+</body>
+</html>

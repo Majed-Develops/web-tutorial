@@ -1,0 +1,98 @@
+body{
+  background-color: blueviolet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nextBtn{
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: green;
+  color: white;
+  font-weight: 900;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nextBtn:hover{
+  background-color: darkgreen;
+  transition: 0.3s;
+}
+
+.nextBtn:active{
+  background-color: lime;
+  transition: 0.3s;
+  color: black;
+  padding: 5px;
+}
+
+.nextBtn:visited{
+  background-color: green;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+h3{
+  text-align: center;
+  box-shadow: 5px 10px;
+  background-color: lightgray;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-radius: 10px;
+}
+
+p{
+  color: black;
+}
+
+
+li{
+  padding: 5px;
+  text-decoration: none;
+}
+
+.question{
+  font-weight:900;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 5px;
+  padding: 3px;
+}
+.excersiseOne{
+  background-color: grey;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 20px 20px 50px 15px black;
+  border-radius: 10px;
+}
+
+.answer{
+  font-weight:900;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 5px;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.excersiseOneAnswer{
+  background-color: grey;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 20px 20px 50px 15px black;
+  border-radius: 10px;
+}
+
+.statement{
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
